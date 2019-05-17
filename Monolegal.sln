@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspNetCore", "aspNetCore", "{FD83547F-BC5F-4E7A-89EB-19F6775BDF97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "angular", "angular", "{AD4EB9C5-5549-48EF-9A21-D0A8E59C1A5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C8F5D37-B9E2-443E-B925-62FABE8668F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F8261B56-B2F0-4525-BA14-968817728AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monolegal.Host", "aspNetCore\src\Monolegal.Host\Monolegal.Host.csproj", "{D7845507-1878-42D1-8DE4-11636A811A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monolegal.AplicacionCore", "aspNetCore\src\Monolegal.AplicacionCore\Monolegal.AplicacionCore.csproj", "{B9019BD1-D85D-40CD-AC04-2337E749D7D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monolegal.Infraestructura", "aspNetCore\src\Monolegal.Infraestructura\Monolegal.Infraestructura.csproj", "{B64287DF-2C2A-49C1-AE50-892D953CED08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monolegal.Test", "aspNetCore\test\Monolegal.Test\Monolegal.Test.csproj", "{0BEBA037-ACCB-488B-9331-C70E731FAA4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7845507-1878-42D1-8DE4-11636A811A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7845507-1878-42D1-8DE4-11636A811A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7845507-1878-42D1-8DE4-11636A811A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7845507-1878-42D1-8DE4-11636A811A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9019BD1-D85D-40CD-AC04-2337E749D7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9019BD1-D85D-40CD-AC04-2337E749D7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9019BD1-D85D-40CD-AC04-2337E749D7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9019BD1-D85D-40CD-AC04-2337E749D7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64287DF-2C2A-49C1-AE50-892D953CED08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64287DF-2C2A-49C1-AE50-892D953CED08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64287DF-2C2A-49C1-AE50-892D953CED08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64287DF-2C2A-49C1-AE50-892D953CED08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEBA037-ACCB-488B-9331-C70E731FAA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEBA037-ACCB-488B-9331-C70E731FAA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEBA037-ACCB-488B-9331-C70E731FAA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEBA037-ACCB-488B-9331-C70E731FAA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C8F5D37-B9E2-443E-B925-62FABE8668F6} = {FD83547F-BC5F-4E7A-89EB-19F6775BDF97}
+		{F8261B56-B2F0-4525-BA14-968817728AD9} = {FD83547F-BC5F-4E7A-89EB-19F6775BDF97}
+		{D7845507-1878-42D1-8DE4-11636A811A90} = {5C8F5D37-B9E2-443E-B925-62FABE8668F6}
+		{B9019BD1-D85D-40CD-AC04-2337E749D7D7} = {5C8F5D37-B9E2-443E-B925-62FABE8668F6}
+		{B64287DF-2C2A-49C1-AE50-892D953CED08} = {5C8F5D37-B9E2-443E-B925-62FABE8668F6}
+		{0BEBA037-ACCB-488B-9331-C70E731FAA4B} = {F8261B56-B2F0-4525-BA14-968817728AD9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F960F528-2AA6-429B-93FB-68A8A813792D}
+	EndGlobalSection
+EndGlobal
