@@ -20,4 +20,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Monolegal.AplicacionCore\Monolegal.AplicacionCore.csproj" />
+    <ProjectReference Include="..\Monolegal.Infraestructura\Monolegal.Infraestructura.csproj" />
+  </ItemGroup>
+
 </Project>

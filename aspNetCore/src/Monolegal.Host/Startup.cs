@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Monolegal.AplicacionCore.Interfaces.IRepositorios;
+using Monolegal.AplicacionCore.Interfaces.IServicios;
+using Monolegal.AplicacionCore.Servicios;
+using Monolegal.AplicacionCore.Utilidades.Configuraciones;
+using Monolegal.Host.Auxiliares;
+using Monolegal.Infraestructura.Repositorios;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Monolegal.Host
@@ -29,6 +30,13 @@ namespace Monolegal.Host
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.Configure<Mongo>(Configuration.GetSection("Mongo"));
+            services.AddScoped(typeof(IRepositorioBaseAsync), typeof(RepositorioBaseAsync));
+            services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+            services.AddScoped<IClienteServicio, ClienteServicio>();
+            services.AddScoped<IFacturaRepositorio, FacturaRepositorio>();
+            services.AddScoped<IFacturaServicio, FacturaServicio>();
+            services.AddSingleton(new MapperConfiguration(a => a.AddProfile(new MapeoProfile())).CreateMapper());
 
             services.AddSwaggerGen(c =>
             {
