@@ -9,6 +9,6 @@ namespace Monolegal.Host.Controllers
     [ApiController]
     public class MonolegalController : ControllerBase
     {
-
+        //private readonly IMapper _Mapper;
     }
 }

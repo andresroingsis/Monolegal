@@ -5,14 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entidades\Negocio\" />
-    <Folder Include="Interfaces\IRepositorios\" />
-    <Folder Include="Interfaces\IServicios\" />
-    <Folder Include="Utilidades\" />
-    <Folder Include="Servicios\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.8.1" />
   </ItemGroup>
 
