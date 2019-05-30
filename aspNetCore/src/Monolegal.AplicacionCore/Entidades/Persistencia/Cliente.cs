@@ -21,6 +21,9 @@ namespace Monolegal.AplicacionCore.Entidades.Persistencia
         public string NombreCompleto { get; set; }
 
         [BsonElement()]
+        public bool Activo { get; set; }
+
+        [BsonElement()]
         public ICollection<Factura> Facturas { get; set; }
     }
 }

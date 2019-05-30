@@ -9,5 +9,7 @@ namespace Monolegal.AplicacionCore.Interfaces.IServicios
         Task<IReadOnlyList<ClienteDto>> ObtenerClientesAsync();
 
         Task AgregarClienteAsync(ClienteDto cliente);
+
+        Task GestionarNotificacionesPorClienteAsync(string numeroDeCedula);
     }
 }

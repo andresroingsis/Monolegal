@@ -13,6 +13,7 @@ using Monolegal.AplicacionCore.Servicios;
 using Monolegal.AplicacionCore.Utilidades.Configuraciones;
 using Monolegal.Host.Auxiliares;
 using Monolegal.Infraestructura.Repositorios;
+using Monolegal.Infraestructura.Servicios;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Monolegal.Host
@@ -36,6 +37,7 @@ namespace Monolegal.Host
             services.AddScoped<IClienteServicio, ClienteServicio>();
             services.AddScoped<IFacturaRepositorio, FacturaRepositorio>();
             services.AddScoped<IFacturaServicio, FacturaServicio>();
+            services.AddScoped<INotificacionServicio, NotificacionServicio>();
             services.AddSingleton(new MapperConfiguration(a => a.AddProfile(new MapeoProfile())).CreateMapper());
 
             services.AddSwaggerGen(c =>

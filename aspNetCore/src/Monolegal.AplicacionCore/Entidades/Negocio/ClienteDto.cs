@@ -13,5 +13,9 @@ namespace Monolegal.AplicacionCore.Entidades.Negocio
         public long NumeroDeCedula { get; set; }
 
         public string NombreCompleto { get; set; }
+
+        public bool Activo { get; set; }
+        
+        public ICollection<FacturaDto> Facturas { get; set; }
     }
 }

@@ -35,6 +35,31 @@ namespace Monolegal.Infraestructura.Repositorios
             }
         }
 
+        public async Task ActualizarClienteAsync(Cliente cliente)
+        {
+            try
+            {
+                await _Contexto.Clientes.ReplaceOneAsync(cli => cli.Id == cliente.Id, cliente);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<Cliente> ObtenerClientePorCedulaAsync(string numeroDeCedula)
+        {
+            try
+            {
+                var consulta = await _Contexto.Clientes.FindAsync(c => c.NumeroDeCedula.ToString() == numeroDeCedula);
+                return await consulta.FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<IReadOnlyList<Cliente>> ObtenerClientesAsync()
         {
             try

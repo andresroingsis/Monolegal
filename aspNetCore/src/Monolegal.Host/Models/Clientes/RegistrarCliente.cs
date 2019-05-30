@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Monolegal.Host.Models.Facturas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,5 +13,9 @@ namespace Monolegal.Host.Models.Clientes
         public long NumeroDeCedula { get; set; }
         
         public string NombreCompleto { get; set; }
+
+        public bool Activo { get; set; }
+
+        public ICollection<RegistrarFactura> Facturas { get; set; }
     }
 }
